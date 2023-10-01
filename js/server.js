@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: 80 });
 
 wss.on('connection', ws => {
   ws.send('Welcome Mohammad`s server!');

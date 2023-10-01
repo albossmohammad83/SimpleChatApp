@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://localhost:8080');
+const socket = new WebSocket('ws://3.140.207.175:80/');
 const chatOutput = document.getElementById('chat-output');
 
 
@@ -90,11 +90,5 @@ function scrollToBottom() {
 
 function playNotificationSound() {
   const notificationSound = new Audio('notification-sound.mp3');
-  // Play the sound when the user interacts with the document (e.g., clicking a button)
-  document.addEventListener('click', () => {
-    notificationSound.play()
-      .catch(error => {
-        console.error('Audio playback failed:', error);
-      });
-  });
+  notificationSound.play();
 }

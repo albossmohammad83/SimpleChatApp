@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Chat App</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="dialog-overlay">
+    <div id="dialog-box">
+      <p>Please enter your nickname:</p>
+      <input type="text" id="nickname-input" placeholder="Your nickname">
+      <button onclick="submitNickname()">Submit</button>
+    </div>
+  </div>
+  <div id="phone-frame" class="blurred">
+    <div id="chat-container">
+      <div id="chat-output"></div>
+      <input type="text" id="message-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

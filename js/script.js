@@ -1,4 +1,4 @@
-const socket = new WebSocket('wss://3.140.207.175:80/');
+const socket = new WebSocket('ws://localhost:80');
 const chatOutput = document.getElementById('chat-output');
 
 

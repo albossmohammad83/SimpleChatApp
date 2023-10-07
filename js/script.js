@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://3.136.181.27');
+const socket = new WebSocket('wss://3.136.181.27/');
 const chatOutput = document.getElementById('chat-output');
 
 
